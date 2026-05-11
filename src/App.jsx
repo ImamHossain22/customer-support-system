@@ -1,5 +1,6 @@
 
 import './App.css'
+import Banner from './components/Banner/Banner'
 import NavBar from './components/NavBar/NavBar'
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       <div className='px-20'>
-      <NavBar></NavBar>
+        <NavBar></NavBar>
+        <Banner></Banner>
       </div>
       
     </>
