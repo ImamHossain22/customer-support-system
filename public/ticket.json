@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Login page not loading",
+    "description": "Users are unable to access the login page on mobile devices.",
+    "customer": "John Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-01T09:15:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Payment gateway timeout",
+    "description": "Checkout process fails when customers try to pay with cards.",
+    "customer": "Emma Johnson",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-05-02T11:30:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Profile image upload issue",
+    "description": "Uploading profile pictures returns an unsupported format error.",
+    "customer": "Michael Brown",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-05-03T08:20:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Dashboard data mismatch",
+    "description": "Sales reports are showing incorrect totals on the admin dashboard.",
+    "customer": "Sophia Davis",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-03T14:10:00Z"
+  },
+  {
+    "id": 5,
+    "title": "Email notifications delayed",
+    "description": "System emails are arriving several hours late.",
+    "customer": "William Wilson",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-05-04T10:45:00Z"
+  },
+  {
+    "id": 6,
+    "title": "Search feature not returning results",
+    "description": "Product search returns empty results even for valid keywords.",
+    "customer": "Olivia Martinez",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-04T16:25:00Z"
+  },
+  {
+    "id": 7,
+    "title": "Broken image links",
+    "description": "Several product images are not displaying on the homepage.",
+    "customer": "James Anderson",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2026-05-05T07:50:00Z"
+  },
+  {
+    "id": 8,
+    "title": "App crashes on startup",
+    "description": "Android application crashes immediately after opening.",
+    "customer": "Isabella Thomas",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2026-05-05T13:05:00Z"
+  },
+  {
+    "id": 9,
+    "title": "Password reset email missing",
+    "description": "Users are not receiving password reset instructions.",
+    "customer": "Benjamin Taylor",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-05-06T09:40:00Z"
+  },
+  {
+    "id": 10,
+    "title": "Slow page performance",
+    "description": "Website pages take more than 10 seconds to load.",
+    "customer": "Mia Moore",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-05-06T15:15:00Z"
+  },
+  {
+    "id": 11,
+    "title": "Invoice PDF download failed",
+    "description": "Customers cannot download invoice PDFs after purchase.",
+    "customer": "Lucas White",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2026-05-07T11:00:00Z"
+  },
+  {
+    "id": 12,
+    "title": "Two-factor authentication issue",
+    "description": "Verification codes are not being accepted during login.",
+    "customer": "Charlotte Harris",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2026-05-07T17:20:00Z"
+  }
+]
