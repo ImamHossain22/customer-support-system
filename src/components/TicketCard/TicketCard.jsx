@@ -1,5 +1,21 @@
+import { useState } from "react";
 
-const TicketCard = ({ data }) => {
+const TicketCard = ({ data, count, setCount }) => {
+
+
+
+    const [disabled, setDisabled] = useState(false);
+
+    const handleProgressCount = () => {
+
+        if (disabled) return;
+        setCount(count + 1);
+
+        setDisabled(true);
+
+
+    };
+
 
     const getPriorityColor = (priority) => {
 
@@ -22,12 +38,13 @@ const TicketCard = ({ data }) => {
         }
     }
 
-
-
-
     return (
 
-        <div>
+        <div onClick={handleProgressCount} className={`
+                ${disabled
+                ? "opacity-50 cursor-not-allowed"
+                : "cursor-pointer hover:scale-[1.01] duration-200"}
+            `}>
 
             <div className="p-5 m-2 shadow-3xl space-y-2 rounded-xl  bg-base-200">
 
@@ -78,7 +95,7 @@ const TicketCard = ({ data }) => {
 
                     <div className='flex gap-5'>
 
-                        <h3>{data.customer}</h3>
+                        <h3 className="font-bold">{data.customer}</h3>
                         <p> {" "}
                             {new Date(data.createdAt).toLocaleDateString("en-GB")}</p>
 
