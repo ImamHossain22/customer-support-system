@@ -1,7 +1,7 @@
 
 import vector from '../../assets/vector1.png'
 
-const Banner = ({count}) => {
+const Banner = ({count, resolve}) => {
     return (
         <div className="flex gap-5 mt-20 items-center">
 
@@ -16,7 +16,7 @@ const Banner = ({count}) => {
 
                 <div className="text-center relative z-10 text-white">
                     <h3 className="font-bold text-3xl">In-Progress</h3>
-                    <h1 className="font-bold text-7xl">{ count }</h1>
+                    <h1 className="font-bold text-7xl">{ count.length }</h1>
                 </div>
             </div>
             <div className=" relative overflow-hidden rounded-xl flex items-center flex-row justify-center w-full h-64 bg-linear-to-r from-[#41b6a0] to-[#92dae5] ">
@@ -29,7 +29,7 @@ const Banner = ({count}) => {
 
                 <div className="text-center relative z-10 text-white">
                     <h3 className="font-bold text-3xl">Resolve</h3>
-                    <h1 className="font-bold text-7xl">0</h1>
+                    <h1 className="font-bold text-7xl">{resolve.length }</h1>
                 </div>
             </div>
 

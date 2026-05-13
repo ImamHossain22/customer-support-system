@@ -1,18 +1,20 @@
-import { useState } from "react";
+import { toast } from "react-toastify";
+
 
 const TicketCard = ({ data, count, setCount }) => {
 
 
 
-    const [disabled, setDisabled] = useState(false);
+
 
     const handleProgressCount = () => {
 
-        if (disabled) return;
-        setCount(count + 1);
+        const exists = count.find(newData => newData.id === data.id);
 
-        setDisabled(true);
+        if (exists) return;
 
+        setCount([...count, data]);
+        toast("Task added successfully !")
 
     };
 
@@ -30,7 +32,7 @@ const TicketCard = ({ data, count, setCount }) => {
             case "Medium":
                 return "text-green-500";
 
-            case "low":
+            case "Low":
                 return "text-blue-500";
 
             default:
@@ -40,11 +42,9 @@ const TicketCard = ({ data, count, setCount }) => {
 
     return (
 
-        <div onClick={handleProgressCount} className={`
-                ${disabled
-                ? "opacity-50 cursor-not-allowed"
-                : "cursor-pointer hover:scale-[1.01] duration-200"}
-            `}>
+
+
+        <div onClick={handleProgressCount} >
 
             <div className="p-5 m-2 shadow-3xl space-y-2 rounded-xl  bg-base-200">
 
